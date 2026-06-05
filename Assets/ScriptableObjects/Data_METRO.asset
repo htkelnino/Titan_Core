@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 790822a6687f56f4489b7bd5a8c2dcf5, type: 3}
+  m_Name: Data_METRO
+  m_EditorClassIdentifier: 
+  robotName: METRO
+  description: Junkyard-Bruiser
+  maxGlobalHP: 1200
+  moveSpeed: 3
+  baseDamage: 55
+  maxEnergy: 100
+  energyRegenRate: 15
+  uniqueSkill: {fileID: 11400000, guid: ccdcea7e2a19b3f468e2a6812fbf85a8, type: 2}
