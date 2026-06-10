@@ -585,11 +585,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80975f571c5ebca4d861e56a27d1d90e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  robotDataTemplate: {fileID: 11400000, guid: 7e8301d58496fa5419b0286f785c80b4, type: 2}
+  robotDataTemplate: {fileID: 11400000, guid: 56854781f66ac9c4babba6b2d0044a6f, type: 2}
   currentGlobalHP: 0
   currentMoveSpeed: 0
   currentAttackDamage: 0
   isParryActive: 0
+  isNextHitCriticalHeadCrack: 0
   moveSpeed: 5
   customGravity: -20
   maxEnergy: 100
@@ -599,6 +600,7 @@ MonoBehaviour:
   overheatDuration: 2.5
   currentStateName: 
   rightFistHitbox: {fileID: 873311944}
+  isIronWallInvulnerable: 0
   velocity: {x: 0, y: 0}
 --- !u!1 &428326402
 GameObject:
@@ -1962,6 +1964,108 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1719938931}
   m_CullTransparentMesh: 1
+--- !u!1001 &1721085654
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1775227749289560759, guid: 1cc3520ffa8370942865cd2f6fb3c7f1, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.9463413
+      objectReference: {fileID: 0}
+    - target: {fileID: 1775227749289560759, guid: 1cc3520ffa8370942865cd2f6fb3c7f1, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0111804
+      objectReference: {fileID: 0}
+    - target: {fileID: 1775227749289560759, guid: 1cc3520ffa8370942865cd2f6fb3c7f1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 1775227749289560759, guid: 1cc3520ffa8370942865cd2f6fb3c7f1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 1775227749289560759, guid: 1cc3520ffa8370942865cd2f6fb3c7f1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1775227749289560759, guid: 1cc3520ffa8370942865cd2f6fb3c7f1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1775227749289560759, guid: 1cc3520ffa8370942865cd2f6fb3c7f1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1775227749289560759, guid: 1cc3520ffa8370942865cd2f6fb3c7f1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1775227749289560759, guid: 1cc3520ffa8370942865cd2f6fb3c7f1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1775227749289560759, guid: 1cc3520ffa8370942865cd2f6fb3c7f1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1775227749289560759, guid: 1cc3520ffa8370942865cd2f6fb3c7f1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1775227749289560759, guid: 1cc3520ffa8370942865cd2f6fb3c7f1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8351191740185433010, guid: 1cc3520ffa8370942865cd2f6fb3c7f1, type: 3}
+      propertyPath: m_Name
+      value: 'TWIN CITIES '
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8351191740185433010, guid: 1cc3520ffa8370942865cd2f6fb3c7f1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1721085656}
+  m_SourcePrefab: {fileID: 100100000, guid: 1cc3520ffa8370942865cd2f6fb3c7f1, type: 3}
+--- !u!1 &1721085655 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8351191740185433010, guid: 1cc3520ffa8370942865cd2f6fb3c7f1, type: 3}
+  m_PrefabInstance: {fileID: 1721085654}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1721085656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721085655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80975f571c5ebca4d861e56a27d1d90e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  robotDataTemplate: {fileID: 11400000, guid: 56854781f66ac9c4babba6b2d0044a6f, type: 2}
+  currentGlobalHP: 0
+  currentMoveSpeed: 0
+  currentAttackDamage: 0
+  isParryActive: 0
+  isNextHitCriticalHeadCrack: 0
+  moveSpeed: 5
+  customGravity: -20
+  maxEnergy: 100
+  currentEnergy: 0
+  energyRegenRate: 15
+  isOverheated: 0
+  overheatDuration: 2.5
+  currentStateName: 
+  rightFistHitbox: {fileID: 873311944}
+  isIronWallInvulnerable: 0
+  velocity: {x: 0, y: 0}
 --- !u!1 &1884460159
 GameObject:
   m_ObjectHideFlags: 0
@@ -2201,3 +2305,4 @@ SceneRoots:
   - {fileID: 416272087}
   - {fileID: 1294857787}
   - {fileID: 1884460162}
+  - {fileID: 1721085654}
